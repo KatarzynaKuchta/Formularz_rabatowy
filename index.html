@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie rekrutacyjne</title>
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    <form class="form form1">
+        <p class="title">Witaj!</p>
+        <p class="info">
+            Wypełnij formularz i&nbsp;zgarnij 
+            <span class="coupon">kupon rabatowy</span> 
+            do wykorzystania przy najbliższych zakupach
+        </p>
+        <div class="textInputsContainer">
+            <input class="inputField" type="email" name="email" placeholder="EMAIL" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+            <input class="inputField" type="text" name="name" placeholder="IMIĘ" required pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ \-]+" title="Nie może zawierać cyfr lub znaków specjalnych."/>
+        </div>
+        <label class="agreementPart">
+            <input id="checkbox" class="checkbox" type="checkbox" required checked name="agreement"/>
+            <p for="checkbox" class="newCheckboxSquare">
+                <img src='img/checked_icon.svg'>
+            </p>
+            <p class="agreementText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                ea commodo consequat.
+            </p>
+        </label>
+        <div class="submitContainer">
+            <input class="submit" type="submit" value="wyślij"/>
+        </div>
+    </form>
+
+    <form class="form form2">
+        <p class="title title2">Dziękujemy
+            <span class="title2Name"></span>!
+        </p>
+        <p class="info info2">
+            Za wypełnienie formularza, kod rabatowy czeka na Ciebie na Twojej skrzynce mailowej
+        </p>
+    </form>
+
+</body>
+
+<script src="js/app.js"></script>
+</html>
+
+
+
